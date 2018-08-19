@@ -34,6 +34,7 @@
     "gulp-rename": "^1.2.3",
     "gulp-svgstore": "6.1.1",
     "gulp-uglify": "^3.0.0",
-    "gulp-webp": "3.0.0"
+    "gulp-webp": "3.0.0",
+    "npm": "^6.4.0"
   }
 }

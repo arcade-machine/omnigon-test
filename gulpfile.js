@@ -15,7 +15,7 @@ var minicss = require("gulp-csso");
 var rename = require("gulp-rename");
 
 gulp.task("less", function () {
-    return gulp.src("source/less/styles.scss")
+    return gulp.src("source/less/styles.less")
         .pipe(plumber())
         .pipe(less())
         .pipe(postcss([

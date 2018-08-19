@@ -1,0 +1,144 @@
+doctype html
+
+html(lang = "EN")
+
+    head
+
+        meta(charset = "utf-8")
+        meta(name = "viewport", content = "width=device-width,initial-scale=1")
+        meta(name="description", content="Omnigon test task")
+
+        title Omnigon test task
+
+        //link(rel="preload" href="fonts/Montserrat-Medium.woff2" as="font")
+        link(type = "text/css", rel = "stylesheet", href = "css/styles.min.css")
+
+    body
+        header(class = "main-header")
+            div(class = "main-header__wrapper")
+                button(class = "main-header__burger")
+                h1(class = "main-header__logo") Omnigon
+                button(class = "main-header__new-vote") New vote
+            ul(class = "main-header__options options")
+                li(class = "options__item options__item--draft")
+                    fieldset
+                        legend Draft
+                        ul(class = "options__list")
+                            li
+                                div(class = "option__picture")
+                                p New vote
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "Serie A Footballer of the Year", src = "img/footballer-of-the-year.png", srcset = "img/footballer-of-the-year@2x.png 2x, img/footballer-of-the-year@3x.png 3x")
+                                p Serie A Footballer of the Year
+                li(class = "options__item options__item--active")
+                    fieldset
+                        legend Active
+                        ul(class = "options__list")
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "Unleash a Jaguar", src = "img/jaguar.png", srcset = "img/jaguar@2x.png 2x, img/jaguar@3x.png 3x")
+                                p Unleash a Jaguar
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "Choose best Wimbledon player and win tickets to the finals", src = "img/wimbledon.png", srcset = "img/wimbledon@2x.png 2x, img/wimbledon@3x.png 3x")
+                                p Choose best Wimbledon player and win tickets to the finals
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "2015 Music Moments", src = "img/music-2015.png", srcset = "img/music-2015@2x.png 2x, img/music-2015@3x.png 3x")
+                                p 2015 Music Moments
+                li(class = "options__item options__item--closed")
+                    fieldset
+                        legend Active
+                        ul(class = "options__list")
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "All time greats", src = "img/all-time-greats.png", srcset = "img/all-time-greats@2x.png 2x, img/all-time-greats@3x.png 3x")
+                                p All time greats
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "Insane Dunks", src = "img/insane-dunks.png", srcset = "img/insane-dunks@2x.png 2x, img/insane-dunks@3x.png 3x")
+                                p Insane Dunks
+                            li
+                                picture
+                                    img(class = "option__picture", alt = "2014 Music Moments", src = "img/music-2014.png", srcset = "img/music-2014@2x.png 2x, img/music-2014@3x.png 3x")
+                                p 2014 Music Moments
+        main(class = "main-page")
+            nav(class = "main-page__navigation main-navigation")
+                ul(class = "main-navigation__list")
+                    li(class = "main-navigation__item")
+                        h2 Detail
+                    li(class = "main-navigation__item main-navigation__item--current")
+                        h2 Content
+                    li(class = "main-navigation__item")
+                        h2 Ads
+                    li(class = "main-navigation__item")
+                        h2 Data capture
+                    li(class = "main-navigation__item")
+                        h2 Look and feel
+            div(class = "main-page__wrapper")
+                label
+                    p Present in random order
+                    input(type = "checkbox", name = "random", id = "random")
+            section(class = "main-page__players-list players")
+                label
+                    input(type = "checkbox", name = "embed", id = "embed")
+                    p Embed at least 2 players*
+                ul(class = "players__list")
+                    li(class = "players__item")
+                        picture
+                            img(alt = "DeMar DeRozan", src = "img/players/derozan.png", srcset = "img/players/derozan@2x.png 2x, img/players/derozan@3x.png 3x")
+                        h3 DeMar DeRozan
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Stephen Curry", src = "img/players/curry.png", srcset = "img/players/curry@2x.png 2x, img/players/curry@3x.png 3x")
+                        h3 Stephen Curry
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Kevin Durant", src = "img/players/durant.png", srcset = "img/players/durant@2x.png 2x, img/players/durant@3x.png 3x")
+                        h3 Kevin Durant
+                    li(class = "players__item")
+                        picture
+                            img(alt = "James Harden", src = "img/players/harden.png", srcset = "img/players/harden@2x.png 2x, img/players/harden@3x.png 3x")
+                        h3 James Harden
+                    li(class = "players__item")
+                        picture
+                            img(alt = "DeAndre Jordan", src = "img/players/jordan.png", srcset = "img/players/jordan@2x.png 2x, img/players/jordan@3x.png 3x")
+                        h3 DeAndre Jordan
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Russell Westbrook", src = "img/players/westbrook.png", srcset = "img/players/westbrook@2x.png 2x, img/players/westbrook@3x.png 3x")
+                        h3 Russell Westbrook
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Chandler Parsons", src = "img/players/parsons.png", srcset = "img/players/parsons@2x.png 2x, img/players/parsons@3x.png 3x")
+                        h3 Chandler Parsons
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Kenneth Faried", src = "img/players/faried.png", srcset = "img/players/faried@2x.png 2x, img/players/faried@3x.png 3x")
+                        h3 Kenneth Faried
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Gordon Hayward", src = "img/players/hayward.png", srcset = "img/players/hayward@2x.png 2x, img/players/hayward@3x.png 3x")
+                        h3 Gordon Hayward
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Mike Conley", src = "img/players/conley.png", srcset = "img/players/conley@2x.png 2x, img/players/conley@3x.png 3x")
+                        h3 Mike Conley
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Dwight Howard", src = "img/players/howard.png", srcset = "img/players/howard@2x.png 2x, img/players/howard@3x.png 3x")
+                        h3 Dwight Howard
+                    li(class = "players__item")
+                        picture
+                            img(alt = "Trey Burke", src = "img/players/placeholder.png", srcset = "img/players/placeholder@2x.png 2x, img/players/placeholder@3x.png 3x")
+                        h3 Trey Burke
+                    - for (var x = 0; x < 12; x++)
+                        li(class = "players__item players__item--mock-up")
+
+
+
+
+
+
+
