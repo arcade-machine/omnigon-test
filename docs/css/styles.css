@@ -91,14 +91,10 @@ body {
   background-color: transparent;
   position: relative;
 }
-.main-header__burger::before {
-  content: "";
-  width: 18px;
-  height: 18px;
+.main-header__burger-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/icons/burger.svg");
+  top: 2px;
+  left: 2px;
 }
 .main-header__logo {
   width: 80%;
@@ -430,15 +426,11 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
 }
-.players__item--mock-up::before {
-  content: "";
-  width: 20px;
-  height: 20px;
+.players__item--mock-up .players__add-player {
   opacity: .6;
   position: absolute;
   top: 44%;
   left: 44%;
-  background-image: url("../img/icons/plus.svg");
 }
 @media (min-width: 1500px) {
   .players__list {

@@ -1,6 +1,8 @@
 const header = document.querySelector(".main-header");
 const burger = header.querySelector(".main-header__burger");
-const players = document.querySelectorAll(".players__item");
+
+// for no-js devices
+header.classList.add("main-header--closed");
 
 burger.addEventListener("click", function () {
     if (header.classList.contains("main-header--closed")) {

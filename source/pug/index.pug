@@ -10,14 +10,18 @@ html(lang = "EN")
 
         title Omnigon test task
 
-        //link(rel="preload" href="fonts/Montserrat-Medium.woff2" as="font")
+        link(rel="preload" href="fonts/Roboto-Bold.woff2" as="font")
+        link(rel="preload" href="fonts/Roboto-Medium.woff2" as="font")
+        link(rel="preload" href="fonts/Roboto-Regular.woff2" as="font")
         link(type = "text/css", rel = "stylesheet", href = "css/styles.min.css")
 
     body
         div(class = "wrapper")
-            header(class = "main-header main-header--closed")
+            header(class = "main-header")
                 div(class = "main-header__wrapper bottom-border")
                     button(class = "main-header__burger")
+                        svg(class="main-header__burger-icon", width="18", height="18")
+                            use(xlink:href="img/icons/sprite.svg#burger")
                     h1(class = "main-header__logo") Omnigon
                     button(class = "main-header__new-vote") New vote
                 ul(class = "main-header__options options")
@@ -86,12 +90,13 @@ html(lang = "EN")
                     div(class = "main-page__middle-wrapper")
                         label(class = "main-page__random-order")
                             p Present in random order
-                            input(class = "visually-hidden", type = "checkbox", name = "random", id = "random", checked)
+                            input(class = "visually-hidden", type = "checkbox", name = "random", id = "random")
                             div(class = "main-page__slider")
                     section(class = "main-page__players-list players")
                         label(class = "players__embed")
                             input(class = "visually-hidden", type = "checkbox", name = "embed", id = "embed", checked)
-                            img(class = "players__checkbox", src = "img/icons/check.svg", width = "16", height = "16")
+                            svg(class="players__checkbox", width="16", height="16")
+                                use(xlink:href="img/icons/sprite.svg#check")
                             p Embed at least 2 players*
                         ul(class = "players__list")
                             li(class = "players__item")
@@ -144,8 +149,11 @@ html(lang = "EN")
                                 h3 Trey Burke
                             - for (var x = 0; x < 12; x++)
                                 li(class = "players__item players__item--mock-up")
+                                    svg(class="players__add-player", width="20", height="20")
+                                        use(xlink:href="img/icons/sprite.svg#plus")
 
     script(src="js/script.js")
+    script(src="js/shuffle.js")
 
 
 
