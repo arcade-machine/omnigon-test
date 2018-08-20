@@ -15,7 +15,7 @@ html(lang = "EN")
 
     body
         div(class = "wrapper")
-            header(class = "main-header")
+            header(class = "main-header main-header--closed")
                 div(class = "main-header__wrapper bottom-border")
                     button(class = "main-header__burger")
                     h1(class = "main-header__logo") Omnigon
@@ -25,7 +25,7 @@ html(lang = "EN")
                         fieldset
                             legend Draft
                             ul(class = "options__list")
-                                li
+                                li(class = "options__current")
                                     div(class = "options__picture")
                                     p New vote
                                 li
@@ -69,22 +69,29 @@ html(lang = "EN")
                     nav(class = "main-page__navigation main-navigation")
                         ul(class = "main-navigation__list")
                             li(class = "main-navigation__item")
-                                h2 Detail
+                                a(href = "#")
+                                    h2 Detail
                             li(class = "main-navigation__item main-navigation__item--current")
-                                h2 Content
+                                a(href = "#")
+                                    h2 Content
                             li(class = "main-navigation__item")
-                                h2 Ads
+                                a(href = "#")
+                                    h2 Ads
                             li(class = "main-navigation__item")
-                                h2 Data capture
+                                a(href = "#")
+                                    h2 Data capture
                             li(class = "main-navigation__item")
-                                h2 Look and feel
-                    div(class = "main-page__middle-wrapper bottom-border")
-                        label
+                                a(href = "#")
+                                    h2 Look and feel
+                    div(class = "main-page__middle-wrapper")
+                        label(class = "main-page__random-order")
                             p Present in random order
-                            input(type = "checkbox", name = "random", id = "random")
+                            input(class = "visually-hidden", type = "checkbox", name = "random", id = "random", checked)
+                            div(class = "main-page__slider")
                     section(class = "main-page__players-list players")
-                        label
-                            input(type = "checkbox", name = "embed", id = "embed")
+                        label(class = "players__embed")
+                            input(class = "visually-hidden", type = "checkbox", name = "embed", id = "embed", checked)
+                            img(class = "players__checkbox", src = "img/icons/check.svg", width = "16", height = "16")
                             p Embed at least 2 players*
                         ul(class = "players__list")
                             li(class = "players__item")
@@ -137,6 +144,8 @@ html(lang = "EN")
                                 h3 Trey Burke
                             - for (var x = 0; x < 12; x++)
                                 li(class = "players__item players__item--mock-up")
+
+    script(src="js/script.js")
 
 
 

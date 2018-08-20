@@ -33,6 +33,11 @@
 @black-two: #000000;
 @black-two-90: rgba(0, 0, 0, 0.9);
 @light-gold: #ffd840;
+@greenblue: #26bf8c;
+@max-width: 1660px;
+@minimum-width: 1200px;
+@tablet: 1155px;
+@mobile: 500px;
 
 img {
   max-width: 100%;
@@ -46,7 +51,7 @@ ul {
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -57,10 +62,22 @@ body {
   background-image: linear-gradient(45deg, @white-two, @white-three);
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .wrapper {
+  min-width: 320px;
   display: flex;
+  justify-content: space-between;
 }
 
 .bottom-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: @tablet) {
+  .wrapper {
+    flex-direction: column;
+  }
 }
