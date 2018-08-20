@@ -15,11 +15,14 @@ html(lang = "EN")
         link(rel="preload" href="fonts/Roboto-Regular.woff2" as="font")
         link(type = "text/css", rel = "stylesheet", href = "css/styles.min.css")
 
+        script(src="js/svg4everybody.min.js")
+        script svg4everybody();
+
     body
         div(class = "wrapper")
             header(class = "main-header")
                 div(class = "main-header__wrapper bottom-border")
-                    button(class = "main-header__burger")
+                    button(class = "main-header__burger", aria-label = "Open menu")
                         svg(class="main-header__burger-icon", width="18", height="18")
                             use(xlink:href="img/icons/sprite.svg#burger")
                     h1(class = "main-header__logo") Omnigon
