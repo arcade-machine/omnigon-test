@@ -207,17 +207,16 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .main-page__random-order {
-  width: 27%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.main-page__random-order p {
+  width: 23%;
   padding: 0;
   margin: 0;
   margin-right: 28px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 .main-page__random-order:hover .main-page__slider::before {
   border: solid 4px rgba(255, 216, 64, 0.6);
@@ -362,16 +361,14 @@ body {
 .players__embed {
   width: 23%;
   height: 30px;
+  padding: 0;
+  margin: 0;
   padding-left: 32px;
   display: flex;
   align-items: center;
+  color: #26bf8c;
   box-sizing: border-box;
   position: relative;
-}
-.players__embed p {
-  padding: 0;
-  margin: 0;
-  color: #26bf8c;
 }
 .players__checkbox {
   display: none;

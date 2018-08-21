@@ -91,72 +91,27 @@ html(lang = "EN")
                                 a(href = "#")
                                     h2 Look and feel
                     div(class = "main-page__middle-wrapper")
-                        label(class = "main-page__random-order")
-                            p Present in random order
+                        label(class = "main-page__random-order") Present in random order
                             input(class = "visually-hidden", type = "checkbox", name = "random", id = "random")
-                            div(class = "main-page__slider")
+                            span(class = "main-page__slider")
                     section(class = "main-page__players-list players")
-                        label(class = "players__embed")
+                        label(class = "players__embed") Embed at least 2 players*
                             input(class = "visually-hidden", type = "checkbox", name = "embed", id = "embed", checked)
                             svg(class="players__checkbox", width="16", height="16")
                                 use(xlink:href="img/icons/sprite.svg#check")
-                            p Embed at least 2 players*
                         ul(class = "players__list")
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "DeMar DeRozan", src = "img/players/derozan.png", srcset = "img/players/derozan@2x.png 2x, img/players/derozan@3x.png 3x")
-                                h3 DeMar DeRozan
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Stephen Curry", src = "img/players/curry.png", srcset = "img/players/curry@2x.png 2x, img/players/curry@3x.png 3x")
-                                h3 Stephen Curry
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Kevin Durant", src = "img/players/durant.png", srcset = "img/players/durant@2x.png 2x, img/players/durant@3x.png 3x")
-                                h3 Kevin Durant
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "James Harden", src = "img/players/harden.png", srcset = "img/players/harden@2x.png 2x, img/players/harden@3x.png 3x")
-                                h3 James Harden
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "DeAndre Jordan", src = "img/players/jordan.png", srcset = "img/players/jordan@2x.png 2x, img/players/jordan@3x.png 3x")
-                                h3 DeAndre Jordan
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Russell Westbrook", src = "img/players/westbrook.png", srcset = "img/players/westbrook@2x.png 2x, img/players/westbrook@3x.png 3x")
-                                h3 Russell Westbrook
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Chandler Parsons", src = "img/players/parsons.png", srcset = "img/players/parsons@2x.png 2x, img/players/parsons@3x.png 3x")
-                                h3 Chandler Parsons
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Kenneth Faried", src = "img/players/faried.png", srcset = "img/players/faried@2x.png 2x, img/players/faried@3x.png 3x")
-                                h3 Kenneth Faried
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Gordon Hayward", src = "img/players/hayward.png", srcset = "img/players/hayward@2x.png 2x, img/players/hayward@3x.png 3x")
-                                h3 Gordon Hayward
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Mike Conley", src = "img/players/conley.png", srcset = "img/players/conley@2x.png 2x, img/players/conley@3x.png 3x")
-                                h3 Mike Conley
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Dwight Howard", src = "img/players/howard.png", srcset = "img/players/howard@2x.png 2x, img/players/howard@3x.png 3x")
-                                h3 Dwight Howard
-                            li(class = "players__item")
-                                picture
-                                    img(alt = "Trey Burke", src = "img/players/placeholder.png", srcset = "img/players/placeholder@2x.png 2x, img/players/placeholder@3x.png 3x")
-                                h3 Trey Burke
-                            - for (var x = 0; x < 12; x++)
-                                li(class = "players__item players__item--mock-up")
-                                    svg(class="players__add-player", width="20", height="20")
-                                        use(xlink:href="img/icons/sprite.svg#plus")
 
-    script(src="js/script.js")
-    script(src="js/shuffle.js")
+
+        ul(class = "players players--template", style = "display:none;")
+            li(class = "players__item")
+                picture
+                    img(alt = "Kenneth Faried", src = "img/players/faried.png", srcset = "img/players/faried@2x.png 2x, img/players/faried@3x.png 3x")
+                h3 Kenneth Faried
+            li(class = "players__item players__item--mock-up")
+                svg(class="players__add-player", width="20", height="20")
+                    use(xlink:href="img/icons/sprite.svg#plus")
+        script(src="js/script.js")
+        script(src="js/shuffle.js")
 
 
 

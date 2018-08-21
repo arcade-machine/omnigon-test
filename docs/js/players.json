@@ -1,0 +1,110 @@
+[
+  {
+    "name": "DeMar DeRozan",
+    "picture": "img/players/derozan.png",
+    "srcset": "img/players/derozan@2x.png 2x, img/players/derozan@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Stephen Curry",
+    "picture": "img/players/curry.png",
+    "srcset": "img/players/curry@2x.png 2x, img/players/curry@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Kevin Durant",
+    "picture": "img/players/durant.png",
+    "srcset": "img/players/durant@2x.png 2x, img/players/durant@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "James Harden",
+    "picture": "img/players/harden.png",
+    "srcset": "img/players/harden@2x.png 2x, img/players/harden@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "DeAndre Jordan",
+    "picture": "img/players/jordan.png",
+    "srcset": "img/players/jordan@2x.png 2x, img/players/jordan@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Russell Westbrook",
+    "picture": "img/players/westbrook.png",
+    "srcset": "img/players/westbrook@2x.png 2x, img/players/westbrook@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Chandler Parsons",
+    "picture": "img/players/parsons.png",
+    "srcset": "img/players/parsons@2x.png 2x, img/players/parsons@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Kenneth Faried",
+    "picture": "img/players/faried.png",
+    "srcset": "img/players/faried@2x.png 2x, img/players/faried@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Gordon Hayward",
+    "picture": "img/players/hayward.png",
+    "srcset": "img/players/hayward@2x.png 2x, img/players/hayward@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Mike Conley",
+    "picture": "img/players/conley.png",
+    "srcset": "img/players/conley@2x.png 2x, img/players/conley@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Dwight Howard",
+    "picture": "img/players/howard.png",
+    "srcset": "img/players/howard@2x.png 2x, img/players/howard@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "name": "Trey Burke",
+    "picture": "img/players/placeholder.png",
+    "srcset": "img/players/placeholder@2x.png 2x, img/players/placeholder@3x.png 3x",
+    "mockUp": false
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  },
+  {
+    "mockUp": true
+  }
+]
